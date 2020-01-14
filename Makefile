@@ -1,8 +1,13 @@
 APPDIR=/home/root
+APPNAME=go-rest
+GOPATH=/go
 PWD=$(shell pwd)
 
+docker: 
+	docker run -it -v ${PWD}:${APPDIR} -v ${PWD}/pkg:${GOPATH}/pkg --name ${APPNAME} --hostname ${APPNAME} --rm  -w ${APPDIR} golang:1.13 ${CMD}
+
 test:
-	docker run -v ${PWD}:${APPDIR} --name go-modules --hostname go-modules --rm  -w ${APPDIR} golang:1.13 go test -race
+	@$(MAKE) CMD="go test -race" docker
 
 sh:
-	docker run -it -v ${PWD}:${APPDIR} --name go-modules --hostname go-modules --rm  -w ${APPDIR} golang:1.13
+	@$(MAKE) docker
