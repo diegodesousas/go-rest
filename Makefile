@@ -9,7 +9,7 @@ docker:
 	docker run \
 		-it \
 		-v ${PWD}:${APPDIR} \
-		-v ${PWD}/pkg:${GOPATH}/pkg \
+		-v ${PWD}/.pkg:${GOPATH}/pkg \
 		-p ${PORT}:${PORT} \
 		--name ${APPNAME} \
 		--hostname ${APPNAME} \
@@ -19,7 +19,7 @@ docker:
 		${CMD}
 
 test:
-	@$(MAKE) CMD="go vet" docker
+	@$(MAKE) CMD="go test -race ./..." docker
 
 sh:
 	@$(MAKE) docker
