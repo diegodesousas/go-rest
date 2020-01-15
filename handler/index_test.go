@@ -18,4 +18,7 @@ func TestIndex(t *testing.T) {
 	handler.ServeHTTP(rr, req)
 
 	assert.Equal(t, rr.Code, http.StatusOK)
+
+	expected := `{"project":"Challenge Bravo Golang"}`
+	assert.Equal(t, rr.Body.String(), expected)
 }

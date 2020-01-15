@@ -16,7 +16,7 @@ docker:
 		--rm  \
 		-w ${APPDIR} \
 		golang:${GOVERSION} \
-		${CMD}
+		${CMD} \
 
 test:
 	@$(MAKE) CMD="go test -race ./..." docker
