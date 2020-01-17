@@ -2,11 +2,17 @@ github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/gorilla/mux v1.7.3 h1:gnP5JzjVOuiZD07fKKToCAOjS0yOpj/qPETTXCCS6hw=
 github.com/gorilla/mux v1.7.3/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=
+github.com/liudng/dogo v0.0.0-20161102105440-7887b849de84 h1:TfoOhPA/wVBQquvt6sLB5azjz7ru+SqSik0LBFJNh8Q=
+github.com/liudng/dogo v0.0.0-20161102105440-7887b849de84/go.mod h1:7K256XlNXuTYd5wy0pvudr7XTD3e8sxK69hDvKK70mE=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.4.0 h1:2E4SXV/wtOkTonXsotYi4li6zVWxYlZuYNCXe9XRJyk=
 github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81PSLYec5m4=
+github.com/zhgo/config v0.0.0-20150924145423-9caf41330bd9 h1:Z1frjeEo/oAdG/GmRuBSdWaVkHYhwursoUq6r4u7h7s=
+github.com/zhgo/config v0.0.0-20150924145423-9caf41330bd9/go.mod h1:I/6dXd84K0o4KQGy6034cb9nognYO2PxCRh/AvsGURg=
+github.com/zhgo/console v0.0.0-20150817103316-22d59bcbd28e h1:ilIThfic42Xozj3DsG676PtCKY/VEPLlt12UNTr48Ks=
+github.com/zhgo/console v0.0.0-20150817103316-22d59bcbd28e/go.mod h1:Scfm/DPAJX13F/A5SBA5NJZdUZ8YAYwXlUexLc/lvPA=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c h1:qgOY6WgZOaTkIIMiVjBQcw93ERBE4m30iBm00nkL0i8=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=

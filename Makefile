@@ -1,9 +1,9 @@
 APPDIR=/go/src/github.com/diegodesousas/go-rest
 APPNAME=go-rest
+IMAGE=go-currency-converter
 GOPATH=/go
 PWD=$(shell pwd)
 PORT=9000
-GOVERSION=1.13
 
 docker: 
 	docker run \
@@ -15,7 +15,7 @@ docker:
 		--hostname ${APPNAME} \
 		--rm  \
 		-w ${APPDIR} \
-		golang:${GOVERSION} \
+		${IMAGE} \
 		${CMD} \
 
 test:
@@ -25,4 +25,7 @@ sh:
 	@$(MAKE) docker
 
 run:
-	@$(MAKE) CMD="go run main.go" docker
+	@$(MAKE) CMD="dogo" docker
+
+build:
+	 docker build -t ${IMAGE} .
